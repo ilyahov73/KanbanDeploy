@@ -1,0 +1,17 @@
+.colomn{
+    display: inline-block;
+    vertical-align: top;
+    margin:10px 10px 10px 10px;
+    background-color: #C3EDF0;
+    border-style: solid;
+    border-color: #14BBC7
+    
+}
+.card{
+    
+    margin:10px 10px 10px 10px;
+    background-color: #7FE2E9;
+    border-style: solid;
+    border-color: #14BBC7
+}
+H3 { text-align: center }
