@@ -121,7 +121,6 @@ export default function Board_component() {
     axios.delete(`http://94.250.250.156:3000/api/v1/colomns/${columnId}`)
       .then(() => {
         const newColumns = columns.filter((column) => column.id !== columnId);
-        setColumnsCount(columnsCount - 1)
         setColumns(newColumns)
     })
   }
@@ -155,7 +154,6 @@ export default function Board_component() {
     if (e.code == "Enter") {
       axios.post(`http://94.250.250.156:3000/api/v1/colomns`,{ colomn: { title:  inputAddColumnValue, position: newColumnPosition, board_id: board.id}})
       .then((response) => {
-        setColumnsCount(columnsCount + 1)
         setColumns([...columns, response.data])
         setInputAddColumnValue("")
       })
