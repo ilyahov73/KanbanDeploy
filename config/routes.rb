@@ -19,20 +19,20 @@ Rails.application.routes.draw do
       delete "/posts/:id", to: "posts#destroy"
       put "/posts/:id", to: "posts#update"
 
-      # get "/boards/:link", to: "boards#show"
-      # post "/boards", to: "boards#create"
+      get "/boards/:link", to: "boards#show"
+      post "/boards", to: "boards#create"
 
-      # get "/colomns/:board_id", to: "colomns#index"
-      # post "/colomns", to: "colomns#create"
-      # delete "/colomns/:id", to: "colomns#destroy"
-      # put "/colomns/:id", to: "colomns#update"
+      get "/colomns/:board_id", to: "colomns#index"
+      post "/colomns", to: "colomns#create"
+      delete "/colomns/:id", to: "colomns#destroy"
+      put "/colomns/:id", to: "colomns#update"
 
-      # get "/cards/:colomn_id", to: "cards#index"
-      # post "/cards", to: "cards#create"
-      # delete "/cards/:id", to: "cards#destroy"
-      # put "/cards/:id", to: "cards#update"
-      # put "/card_move_left/:id", to: "cards#card_move_left"
-      # put "/card_move_right/:id", to: "cards#card_move_right"
+      get "/cards/:colomn_id", to: "cards#index"
+      post "/cards", to: "cards#create"
+      delete "/cards/:id", to: "cards#destroy"
+      put "/cards/:id", to: "cards#update"
+      put "/card_move_left/:id", to: "cards#card_move_left"
+      put "/card_move_right/:id", to: "cards#card_move_right"
       
       # putch "/cards/:id", to: "cards#edit"
       #resources :boards, only: [:create, :show]
